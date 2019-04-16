@@ -1,7 +1,7 @@
 require 'bundler'
 Bundler.require
 
-require_relative 'lib/game'
+require_relative 'lib/gamev2'
 require_relative 'lib/player'
 
 
@@ -25,7 +25,7 @@ my_game = Game.new("#{prenom}")
 
 	while my_game.is_still_ongoing? == true
 
-
+		my_game.new_players_in_sight
 		my_game.menu_choice(my_game.menu)
 	end
 

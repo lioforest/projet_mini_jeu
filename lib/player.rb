@@ -1,4 +1,4 @@
-	class Player
+	class Player < Game
 
 
 		#les variables d'instances sont en lecture et écriture
@@ -33,9 +33,9 @@
 
 		def attacks(player2)
 			
-			puts "le joueur #{@name} attaque le joueur #{player2.name}"
+			puts "     le joueur #{@name} attaque le joueur #{player2.name}"
 			dommage_point = compute_damage
-			puts "Il lui inflige #{dommage_point} points de dommages."
+			puts "         => Il lui inflige #{dommage_point} points de dommages."
 			
 			gets_damage(dommage_point,player2)
 		end
